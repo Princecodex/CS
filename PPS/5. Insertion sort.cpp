@@ -1,29 +1,36 @@
 #include<stdio.h>
-#include<math.h>
 int main(){
-	double a,b,c,discri,denomi,root1,root2,realpart,imagepart;
-	
-	printf("Enter the coefficients  a, b and c ");
-	scanf("%lf %lf %lf",&a,&b,&c);
-	
-	discri=b*b-4*a*c;
-	denomi=2*a;
-	
-	if(discri>0){
-		root1=(-b+sqrt(discri))/denomi;
-		root2=(-b-sqrt(discri))/denomi;
-		printf("root1=%.2lf root2=%.2lf",root1,root2);
+	int num,ele[100],key,flag;
+
+	printf("Enter number of elements ");
+	scanf("%d",&num);
+
+	printf("Enter %d integers\n",num);
+	for(int i=0; i<num; i++){
+    	scanf("%d", &ele[i]);
 	}
 	
-	else if(discri==0){
-		root1=root2=-b/denomi;
-		printf("root1=root2=%.2lf",root1);
+  	for(int i=1;i<=num-1; i++) {
+    key = ele[i];
+    int j;
+	for(j=i-1; j>=0; j--){
+		if(ele[j]>key){
+		   ele[j+1]=ele[j];
+		   flag=1;  
+		}
+		else{
+		break;
+		}
+	}
+	if(flag){
+		ele[j+1]=key;
 	}
 	
-	else{
-		realpart=-b/denomi;
-		imagepart=sqrt(-discri)/denomi;
-		printf("root1=%.2lf root2=%.2lf ",realpart+imagepart,realpart-imagepart);
+}
+	printf("Insertion sorting in ascending order:\n");
+	for(int i=0; i<num; i++){
+     printf("%d\n",ele[i]);
 	}
-	return 0;
-}	
+return 0;
+}
+	
