@@ -17,13 +17,13 @@ int main(){
 	
 	else if(discri==0){
 		root1=root2=-b/denomi;
-		printf("root1=root2=%.lf",root1);
+		printf("root1=root2=%.2lf",root1);
 	}
 	
 	else{
 		realpart=-b/denomi;
 		imagepart=sqrt(-discri)/denomi;
-		printf("root1=%.lf+%.lf root2=%.lf-%.lf ",realpart,imagepart,realpart,imagepart);
+		printf("root1=%.2lf root2=%.2lf ",realpart+imagepart,realpart-imagepart);
 	}
 	return 0;
 }
