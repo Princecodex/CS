@@ -25,5 +25,5 @@ int main(){
 		imagepart=sqrt(-discri)/denomi;
 		printf("root1=%.2lf root2=%.2lf ",realpart+imagepart,realpart-imagepart);
 	}
-	return 0;
+return 0;
 }
