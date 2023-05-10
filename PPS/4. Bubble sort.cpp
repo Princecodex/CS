@@ -17,8 +17,8 @@ int main(){
         		ele[j]=ele[j+1];
         		ele[j+1]=swap;
 			}
+    		}
     	}
-    }
     
 	printf("Bubble sorting in ascending order:\n");
 	for(int i=0;i<num;i++){
