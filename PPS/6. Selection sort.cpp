@@ -28,5 +28,5 @@ int main(){
 	for(int i=0;i<num;i++){
     	printf("%d\n",ele[i]);
 	}
-  return 0;
+return 0;
 }
