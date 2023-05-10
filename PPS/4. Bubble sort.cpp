@@ -13,7 +13,7 @@ int main(){
 	for(int i=0;i<num-1;i++){
 		for(int j=0;j<num-1-i;j++){
 			if(ele[j]>ele[j+1]){
-				swap=ele[j];
+			swap=ele[j];
         		ele[j]=ele[j+1];
         		ele[j+1]=swap;
 			}
