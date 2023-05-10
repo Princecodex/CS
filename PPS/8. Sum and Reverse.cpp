@@ -15,5 +15,5 @@ int main(){
 	printf("\nThe sum is %d",sum);
 	printf("\nThe reverse is %d",reve);
 	
-	return 0;
+return 0;
 }
