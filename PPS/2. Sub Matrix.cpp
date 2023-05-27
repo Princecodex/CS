@@ -21,6 +21,8 @@ int main(){
 		for(int j=0; j<c; j++){
 			printf("Enter the element %d%d ",i+1,j+1);
 			scanf("%d",&b[i][j]);
+			}
+		printf("\n");
 		}
 	}
 	
