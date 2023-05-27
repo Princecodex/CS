@@ -34,9 +34,8 @@ int main(){
 	for(int i=0; i<r; i++){
 		for(int j=0; j<c; j++){
 			printf("%d  ",sum[i][j]);
-			if(j==c-1){
-				printf("\n\n");
 			}
+		printf("\n");
 		}
 	}
 return 0;
