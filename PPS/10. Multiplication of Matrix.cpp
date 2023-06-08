@@ -2,21 +2,17 @@
 int main(){
 	int r, c, a[100][100], b[100][100], Multi[100][100];
 	
-	printf("Enter the number of rows you want ");
-	scanf("%d",&r);
+	printf("Enter the number of rows you want and columns you want ");
+	scanf("%d%d",&r,&c);
 	
-	printf("Enter the number of columns you want ");
-	scanf("%d",&c);
-	
-	printf("Enter the element of First Matrix\n");
+	printf("Enter First Matrix\n");
 	for(int i=0; i<r; i++){
 		for(int j=0; j<c; j++){
-			printf("Enter the element %d%d ",i+1,j+1);
 			scanf("%d",&a[i][j]);
 		}
 	}
 	
-	printf("Enter the element of Second Matrix\n");
+	printf("Enter Second Matrix\n");
 	for(int i=0; i<r; i++){
 		for(int j=0; j<c; j++){
 			printf("Enter the element %d%d ",i+1,j+1);
