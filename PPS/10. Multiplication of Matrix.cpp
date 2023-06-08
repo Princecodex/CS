@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-	int r, c, a[100][100], b[100][100], Multi[100][100];
+	int r, c, a[100][100], b[100][100], do[100][100];
 	
 	printf("Enter the number of rows you want and columns you want ");
 	scanf("%d%d",&r,&c);
@@ -23,7 +23,7 @@ int main(){
 	printf("The Multiplication of First and Second Matrix is\n");
 	for(int i=0; i<r; i++){
 		for(int j=0; j<c; j++){
-			Multi[i][j]=a[i][j]*b[i][j];
+			do[i][j]=a[i][j]*b[i][j];
 			printf("%d ",Multi[i][j]);
 		}
 		printf("\n");
